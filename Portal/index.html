@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="hu">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Az OnlineStudium központi portálja">
+		<meta name="author" content="Bencs Balázs">
+		<title>Online Studium</title>
+		<link rel="stylesheet" href="plugin/bootstrap/css/bootstrap.min.css">
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html"></a>
+				</div>
+				<div id="navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav navbar-left" id="MenuDobozok"></ul>
+					<div class="col-lg-3 col-sm-6 navbar-right">
+					<div class="input-group">
+						<div class="input-group-btn search-panel">
+							<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+								<span id="search_concept">Mindenben</span> <span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu" role="menu">
+							  <li><a href="#all">Mindenben</a></li>
+							  <li><a href="#name">Név</a></li>
+							  <li><a href="#szervezet">Szervezet</a></li>
+							  <li><a href="#email">Email</a></li>
+							  <li><a href="#telefon">Telefon</a></li>
+							</ul>
+						</div>
+						<input type="hidden" name="search_param" value="all" id="search_param">         
+						<input type="text" class="form-control" name="x" id="search_text" placeholder="DUE telefonkönyv..." max="50" width="25" required>
+						<span class="input-group-btn">
+							<button class="btn btn-default" type="button" id="telefonkonyv" data-toggle="modal" data-target="#tel_search"><span class="glyphicon glyphicon-search"></span></button>
+						</span>
+					</div>
+					</div>
+					<ul class="nav navbar-nav navbar-right" id="UserMenu"></ul>
+				</div>
+			</div>
+		</nav>
+		<div class="row" id="marketing">
+			<div class="container">
+				<div class="jumbotron typewriter">
+					<h1>Marketing</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec ex ac magna maximus iaculis. Donec elementum, odio eget placerat finibus, ligula nibh pharetra mi, lobortis malesuada massa tortor sit amet libero. Aliquam erat volutpat. Donec posuere laoreet condimentum.</p>
+					<p>
+					  <a class="btn btn-lg btn-primary" href="" role="button">Tovább</a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="row" id="aktualis">
+			<div class="container">
+				<div class="col-lg-12 text-center">
+					<h2>Aktuális kurzusaink</h2></div>
+				<div class="col-lg-6">
+					<div class="list-group">
+						<a href="#" class="list-group-item list-group-item-action disabled">Cras justo odio</a>
+						<a href="#" class="list-group-item list-group-item-action disabled">Dapibus ac facilisis in</a>
+						<a href="#" class="list-group-item list-group-item-action disabled">Morbi leo risus</a>
+						<a href="#" class="list-group-item list-group-item-action disabled">Porta ac consectetur ac</a>
+						<a href="#" class="list-group-item list-group-item-action disabled">Vestibulum at eros</a>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="wrap">
+						<div class="cube">
+							<div class="front"></div><div class="back"></div><div class="top"></div><div class="bottom"></div><div class="left"></div><div class="right"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row" id="linkek">
+			<div class="container" id="DobozosLinkek">
+			</div>
+		</div>
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<span class="copyright">
+							&copy; OnlineStudium&trade; 2017
+						</span>
+					</div>
+					<div class="col-md-4 text-center">
+						<ul class="list-inline social-buttons">
+							<li>
+								<a href="https://twitter.com/BencsBalzs">
+									<i class="fa fa-twitter"></i>
+								</a>
+							</li>
+							<li>
+								<a href="http://facebook.com/bencs.balazs.9">
+									<i class="fa fa-facebook"></i>
+								</a>
+							</li>
+							<li>
+								<a href="https://plus.google.com/115324158791510458707?hl=hu">
+									<i class="fa fa-google-plus"></i>
+								</a>
+							</li>
+							<li>
+								<a href="https://www.linkedin.com/in/bal%C3%A1zs-bencs-499917102/">
+									<i class="fa fa-linkedin"></i>
+								</a>
+							</li>
+							<li>
+								<a href="https://github.com/bencsbalazs">
+									<i class="fa fa-github"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-4">
+						
+					</div>
+				</div>
+			</div>
+		</footer>
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+						<h4 class="modal-title" id="myModalLabel">Log in</h4>
+					</div>
+					<div class="modal-body">
+						<form>
+							<div class="form-group">
+								<div class="input-group">
+									<input type="text" class="form-control" id="uLogin" placeholder="Login">
+									<label for="uLogin" class="input-group-addon glyphicon glyphicon-user"></label>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="input-group">
+									<input type="password" class="form-control" id="uPassword" placeholder="Password">
+									<label for="uPassword" class="input-group-addon glyphicon glyphicon-lock"></label>
+								</div>
+							</div>
+							<div class="checkbox">
+								<label>
+									<input type="checkbox"> Remember me
+								</label>
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button class="form-control btn btn-primary">Ok</button>
+						<div class="progress">
+							<div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="1" aria-valuemin="1" aria-valuemax="100" style="width: 0%;">
+								<span class="sr-only">progress</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="modal fade" id="tel_search" role="dialog">
+			<div class="modal-dialog modal-lg">
+			  <div class="modal-content">
+				<div class="modal-header">
+				  <button type="button" class="close" data-dismiss="modal">&times;</button>
+				  <h4 class="modal-title">Találatok</h4>
+				</div>
+				<div class="modal-body">
+				  <div class="embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item" id="tel_iframe" src="" allowfullscreen></iframe>
+					</div>
+				</div>
+				<div class="modal-footer">
+				  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		
+		<noscript id="deferred-styles">
+			<link rel="stylesheet" href="plugin/bootstrap/css/bootstrap-theme.min.css">
+			<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+			<link rel="stylesheet" href="plugin/font-awesome-4.7.0/css/font-awesome.min.css">
+			<link rel="stylesheet" href="plugin/video-js-6.2.8/video-js.min.css">
+			<link rel="stylesheet" type="text/css" href="css/style.css">
+		</noscript>
+		<script>
+			var loadDeferredStyles = function() {
+				var addStylesNode = document.getElementById("deferred-styles");
+				var replacement = document.createElement("div");
+				replacement.innerHTML = addStylesNode.textContent;
+				document.body.appendChild(replacement)
+				addStylesNode.parentElement.removeChild(addStylesNode);
+			};
+			var raf = requestAnimationFrame || mozRequestAnimationFrame || webkitRequestAnimationFrame || msRequestAnimationFrame;
+			if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+			else window.addEventListener('load', loadDeferredStyles);
+		</script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<script src="plugin/video-js-6.2.8/video.min.js"></script>
+		<script src="js/functions.js"></script>
+	</body>
+</html>
